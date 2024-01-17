@@ -1,0 +1,283 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Selecao Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  
+  <link href="{% static '/assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static '/assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao - v4.8.0
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <div class="logo">
+            <h1><a href="{% url 'inicio' %}">Estafas.cl</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+          </div>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li class="dropdown"><a href="#"><span>Categoria</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#">Drop Down 1</a></li>
+                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Deep Drop Down 1</a></li>
+                      <li><a href="#">Deep Drop Down 2</a></li>
+                      <li><a href="#">Deep Drop Down 3</a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Drop Down 2</a></li>
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                </ul>
+              </li>
+              <li >
+                <a class="nav-link btn-outline-dark" href="#contact" data-bs-toggle="modal" data-bs-target="#myModal" ><i class="bi bi-cart-check-fill" style="font-size: 30px; text-align: center;"></i></a>
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+        </div>
+
+    </header><!-- End Header -->
+
+    <section id="hero" class="d-flex flex-column justify-content-end align-items-center" style="height: 100px;">
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <defs>
+              <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+            </defs>
+            <g class="wave1">
+              <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+            </g>
+            <g class="wave2">
+              <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+            </g>
+            <g class="wave3">
+              <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+            </g>
+        </svg>
+    </section>
+
+    {% if mensaje %}
+        <div class="alert alert-success">
+            {{ mensaje }}
+        </div>
+    {% endif %}
+    <p></p>
+    <div class="container">
+      <div class="card w-75 mx-auto">
+        <div class="row">
+          <div class="col-md-4 col-4 col-sm-4 border bg-light">
+            <p style="text-align: center; font-size: small;"><i class="bi bi-1-circle" style="font-size: 30px; text-align: center; margin: 0 auto;"></i> Datos Personales</p>
+          </div>
+    
+          <div class="col-md-4 col-4 col-sm-4">
+            <p style="text-align: center; font-size: small;"><i class="bi bi-2-circle" style="font-size: 30px; text-align: center; "></i> Tipo de entrega</p>
+          </div>
+    
+          <div class="col-md-4 col-4 col-sm-4 ">
+            <p style="text-align: center; font-size: small;"><i class="bi bi-3-circle" style="font-size: 30px; text-align: center; margin: 0 auto;"></i> Pago</p>
+          </div>
+        </div>
+      </div>
+
+      <p></p>
+      <div class="row">
+        <div class="col-12 col-md-8 col-sm-12">
+          <div class="card">
+            {% if Etapa == 1 %}
+            <form method="POST">
+              {% csrf_token %}
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="usr"><b>Nombre *</b></label>
+                                
+                      {{ formularioCliente.nombre}}
+
+                </div>
+                <p></p>
+                <div class="form-group">
+                  <label for="usr"><b>Apellido *</b></label>
+                  {{ formularioCliente.apellido}}
+                </div>
+                            <p></p>
+                            <div class="form-group">
+                                <label for="usr"><b>Direccion *</b></label>
+                                {{ formularioCliente.direccion}}
+                            </div>
+                            <p></p>
+                            <div class="form-group">
+                                <label for="usr"><b>Email *</b></label>
+                                {{ formularioCliente.correo}}
+                            </div>
+                            <p></p>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <label for="usr"><b>Codigo </b></label>
+                                        <input type="text" class="form-control" id="usr">
+                                    </div>
+
+                                    <div class="col-9">
+                                        <label for="usr"><b>Telefono *</b></label>
+                                        {{ formularioCliente.telefono}}
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <p></p>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio"  checked><b>RUN</b></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio"  checked><b>DNI</b></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                {{ formularioCliente.rut}}
+                            </div>
+
+                            
+                            <input type="submit" class="btn btn-outline-primary form-control">
+                        </div>
+
+                    </form>
+                    {% else %}
+                    <form method="POST">
+                        <div class="card-header">
+                            <p>Indica donde quieres recibir tu compra</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="usr"><b>Direccion *</b></label>
+                                    <input class="form-control" >
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    {% endif %}
+                    
+                </div>
+
+                
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="card h-100" >
+                    <div class="card-header">
+                        <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px; text-align: center;"><b>Carro de compras</b></p>
+                      </div>
+                    {% if Carro %}
+          
+                      {% for dato in Carro %}
+                      <div class="row" >
+                        <p></p>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                          <div class="card-body" style="text-align: center;" >
+                            <img class="card-img-top w-75" src="{% static '/img/' %}{{dato.img}}" alt="..."  >
+                          </div>
+                          
+                            
+                        </div>
+                
+                        <div class="col-12 col-sm-12 col-md-12">
+                          
+                          <div class="card-body" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">
+                            
+                            <p><b>{{dato.nombre}}</b></p>
+                            
+                            <div class="row w-100 border" >
+                              <p style="font-size: 10px;">cantidad: </p>
+                              <div class="input-group">
+                                
+                                <a href="{% url 'DisminuirCantidadProductos' dato.sku %}" class="btn btn-outline-dark" type="button">-</a>
+                                <input type="number" class="quantity-field js-qty-field w-25" style="text-align: center;" step="1" value="{{dato.cantidad}}" readonly>
+                                <a href="{% url 'AumentarCantidadProductos' dato.sku %}" class="btn btn-outline-dark" type="button">+</a>
+                              </div>
+                            </div>
+                            
+                            <p style="font-size: 10px; padding-top: 5px;">SKU: XX001-0{{dato.sku}}</p>
+
+                            <p style="font-size: 20px;"><b>$ {{dato.precio}}</b></p>
+                      
+                            <p>Color: Cafe</p>
+                                  
+                          </div>
+                          
+                        </div>
+                        
+                        
+                
+                      </div>
+                
+                      <div style="border: 1px solid black;"></div>
+                
+                      {% endfor %}
+                    {% else %}
+          
+                    <h3 style="text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Sin productos en tu carro</h3>
+          
+                    {% endif %}
+                      <div class="card-footer">
+                        <p style="text-align:end"><b>Total: $ {{Total}}</b></p>
+                      </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
